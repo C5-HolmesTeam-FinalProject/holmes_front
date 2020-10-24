@@ -1,0 +1,38 @@
+@import "./Vars.scss";
+body{
+  margin:0;
+}
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding2;
+}
+
+.Header--dark{
+  background-color:$color1;
+}
+
+.Header__brand{
+  width: 150px;
+}
+
+// .Header__nav{
+//   padding: $padding1;
+// }
+
+.Header__nav--item{
+  padding: $padding3;
+}
+
+a{
+  font-family: $font-family;
+    text-decoration: none;
+    color: $color4;
+    font-size: $size-xs;
+    font-weight: $font-weight-m;
+}
+
+a:hover{
+  font-size: $size-s;
+}
