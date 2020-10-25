@@ -1,9 +1,10 @@
 import React from 'react';
+import Card from '../components/card';
 
 const Home = () => (
-    <>
-        <h1>Hello Holmes</h1>
-    </>
-)
+  <>
+    <Card title='Hotel Luxury' />
+  </>
+);
 
 export default Home;
