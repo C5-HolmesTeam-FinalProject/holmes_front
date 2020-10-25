@@ -8,7 +8,7 @@ const Header = ({ mode }) => (
     <img className='Header__brand' src={logo} alt='logo' />
     <div className='Header__nav'>
       <a className='Header__nav-item' href='/'>Registrarme</a>
-      <Button className='Header__nav-item' text='Mi cuenta' onClick={() => console.log('a trabajar')} />
+      <Button text='Mi cuenta' onClick={() => console.log('a trabajar')} />
     </div>
   </div>
 );

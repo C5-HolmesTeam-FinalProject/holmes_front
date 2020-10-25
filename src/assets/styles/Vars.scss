@@ -9,12 +9,14 @@ $color6:#BC3908;
 //--fonts size
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 $font-family: 'Montserrat', sans-serif;
+$size-xxs:15px;
 $size-xs: 20px;
 $size-s: 25px;
 $size-m: 36px;
 $size-l: 50px;
 $size-xl: 68px;
 $size-xxl: 150px;
+$size-title:40px;
 $size-icons: 45px;
 
 //--font-weight
@@ -30,6 +32,8 @@ $padding3: 0 1rem;
 $padding4: 2rem 1rem; 
 $padding5: 3rem 1rem;
 $padding6:1rem;
+$padding7:2rem;
+
 
 //-percent
 $percent1:10%;

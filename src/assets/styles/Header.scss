@@ -17,9 +17,9 @@ body{
   width: 150px;
 }
 
-// .Header__nav{
-//   padding: $padding1;
-// }
+ .Header__nav a{
+    margin-left: 2rem;
+ }
 
 .Header__nav--item{
   padding: $padding3;
