@@ -1,9 +1,12 @@
 import React from 'react';
+import Cover from '../components/Cover';
+import Search from '../components/Search';
 
 const Home = () => (
-    <>
-        <h1>Hello Holmes</h1>
-    </>
-)
+  <>
+    <Cover />
+    <Search />
+  </>
+);
 
 export default Home;
