@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 const Home = () => (
-    <>
-        <h1>Hello Holmes</h1>
-    </>
+  <>
+    <h1>Hello Holmes XD</h1>
+  </>
 )
 
-export default Home;
+export default Home

@@ -1,34 +1,33 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Home from '../pages/Home';
+import Home from '../pages/Home'
+import AddPost from '../pages/AddPost'
 // import Login from '../containers/Login';
 // import Register from '../containers/Register';
 // import NotFound from '../containers/NotFound';
 // import Layout from '../components/Layout';
 // import Player from '../containers/Player'
 
-
-const App = () => ( 
-    <BrowserRouter>
+const App = () => (
+  <BrowserRouter>
     {/* <Layout> */}
-        <Switch>
-            <Route exact path="/" component = {Home} />
-            {/* <Route exact path="/login" component = {Login} />
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/addpost' component={AddPost} />
+      {/* <Route exact path="/login" component = {Login} />
             <Route exact path="/register" component = {Register} />
             <Route exact path="/player/:id" component = {Player} />
             <Route component = {NotFound} /> */}
-        </Switch>
+    </Switch>
     {/* </Layout> */}
 
-
-    </BrowserRouter>
+  </BrowserRouter>
 )
 
-export default App;
+export default App
 
-
-//Atributos para los Route Objectos:
+// Atributos para los Route Objectos:
 
 // path: la ruta en la que se renderizará el componente en forma de cadena de texto
 // exact: un booleano para definir si queremos que la ruta tiene o no que ser exacta para renderizar un componente. Eg: /index !== /index/all.
