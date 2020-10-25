@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import yellowArrow from '../assets/images/yellowArrow.png';
+import Arrow from '../assets/images/yellowArrow.png';
 import '../assets/styles/Button.scss';
 
-const Button = ({ text, onClick }) => {
-
+const Button = ({ mode, text, onClick }) => {
   return (
     <Link
       to='/'
-      className='button'
+      className={mode === 'dark' ? 'button dark' : mode === 'darkred' ? 'button darkred' : 'button'}
       onClick={onClick}
     >
       {text}
-      <img src={yellowArrow} alt='yellowArrow' />
+      <img src={Arrow} alt='Arrow' />
     </Link>
   );
 };
