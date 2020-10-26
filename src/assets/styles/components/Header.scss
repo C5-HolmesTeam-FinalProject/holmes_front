@@ -25,14 +25,13 @@ body{
   padding: $padding3;
 }
 
-a{
+.Header__nav a{
   font-family: $font-family;
-    text-decoration: none;
-    color: $color4;
-    font-size: $size-xs;
-    font-weight: $font-weight-m;
+  text-decoration: none;
+  color: $color4;
+  font-size: $size-xs;
+  font-weight: $font-weight-m;
 }
-
-a:hover{
+.Header__nav a:hover{
   font-size: $size-s;
 }

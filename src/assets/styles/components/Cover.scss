@@ -28,34 +28,3 @@ body{
   width: $percent6;
   text-shadow: 1px 2px 9px $color2;
 }
-
-
-.Header{
-  display: flex;
-  justify-content: space-between;
-  padding: $padding2;
-}
-
-.Header_brand{
-  width: $size-xxl;
-}
-
-.Header_nav{
-  padding: $padding1;
-}
-
-.Header_nav-item{
-  padding: $padding3;
-}
-
-a{
-  font-family: $font-family;
-    text-decoration: none;
-    color: $color4;
-    font-size: $size-xs;
-    font-weight: $font-weight-m;
-}
-
-a:hover{
-  font-size: $size-s;
-}
