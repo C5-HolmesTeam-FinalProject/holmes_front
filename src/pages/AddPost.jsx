@@ -46,7 +46,11 @@ const AddPost = () => (
       <Button text='Guardar Cambios' onClick={() => console.log('a trabajar')} />
       <section className="gallery">
         <h2>Galería</h2>
-        <img src={image} alt=""/>
+        <div className="galleryImages">
+          <img src={image} alt=""/>
+          <img src={image} alt=""/>
+          <img src={image} alt=""/>
+        </div>
       </section>
       <div className="galleryButtons">
         <Button text='Agregar Imágen' onClick={() => console.log('a trabajar')} />
