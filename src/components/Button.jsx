@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Arrow from '../assets/images/yellowArrow.png';
-import '../assets/styles/Button.scss';
+import '../assets/styles/components/Button.scss';
 
 const Button = ({ mode, text, onClick }) => {
   return (

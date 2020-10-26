@@ -1,9 +1,10 @@
-@import "./Vars.scss";
+@import "../Vars.scss";
+
 body{
   margin:0;
 }
 .Cover{
-  background-image: url("../images/LuxuryHomes.png");
+  background-image: url("../../images/LuxuryHomes.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;

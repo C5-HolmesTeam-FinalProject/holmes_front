@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Information.scss';
+import '../assets/styles/components/Information.scss';
 import goodhands from '../assets/images/GoodHands.png';
 import Button from './Button';
 

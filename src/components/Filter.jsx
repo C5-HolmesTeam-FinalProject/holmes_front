@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Filter.scss';
+import '../assets/styles/components/Filter.scss';
 import arrowdown from '../assets/images/arrowsdown.svg';
 
 const Filter = ({ text }) => (

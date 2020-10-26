@@ -1,5 +1,9 @@
+@import "./Vars.scss";
+
 body{
-  margin:
+  margin: 0;
+  background: $color7;
+  font-family: $font-family;
 }
 
 a{

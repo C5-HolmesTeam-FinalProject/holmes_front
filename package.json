@@ -29,12 +29,12 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-favicon": "0.0.18",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "styled-components": "^5.2.0",
-    "redux": "^4.0.5"
-
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -50,7 +50,6 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.4",
     "standard": "^15.0.0",
-    "sass-loader": "^10.0.4",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
@@ -63,7 +62,7 @@
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/C5-HolmesTeam-FinalProject/holmes_front.git"
   },

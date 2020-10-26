@@ -1,6 +1,6 @@
-const path = require('path')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -40,7 +40,7 @@ module.exports = {
       },
       {
 
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -57,8 +57,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      title: 'Holmes',
       template: './public/index.html',
       filename: './index.html',
+      favicon: './fav-icon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',

@@ -10,8 +10,8 @@ const Home = () => (
   <>
     <Cover />
     <Search />
-    <Information title='Trabaja con nosotros' />
     <Card title='Hotel Luxury' />
+    <Information title='Trabaja con nosotros' />
   </>
 );
 
