@@ -3,11 +3,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import ButtonMenu from '../components/ButtonMenu';
 
+import '../assets/styles/AddPost.scss'
+
 const AddPost = () => (
   <>
     <Layout>
       <h1>Añadir Publicación</h1>
-      <div className="homeDescriptions">
+      <section className="homeDescriptions">
+        <h2>Ubicación</h2>
         <ButtonMenu />
         <ButtonMenu />
         <ButtonMenu />
@@ -18,8 +21,9 @@ const AddPost = () => (
         <ButtonMenu />
         <ButtonMenu />
         <ButtonMenu />
-      </div>
-      <div className="homeDescriptions2">
+      </section>
+      <section className="homeDescriptions">
+        <h2>Datos de tu Propiedad</h2>
         <ButtonMenu />
         <ButtonMenu />
         <ButtonMenu />
@@ -30,7 +34,13 @@ const AddPost = () => (
         <ButtonMenu />
         <ButtonMenu />
         <ButtonMenu />
-      </div>
+      </section>
+      <section className="descriptionText">
+        <h2>Descripción</h2>
+        <form className="description" action="">
+          <input type="text" id="description" name="description" />
+        </form>
+      </section>
     </Layout>
   </>
 );

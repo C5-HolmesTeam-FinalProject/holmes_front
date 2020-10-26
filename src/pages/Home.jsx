@@ -9,9 +9,9 @@ const Home = () => (
   <>
     <Cover />
     <Search />
-    <Information title='Trabaja con nosotros' />
     <Card title='Hotel Luxury' />
     <Footer title='Haz tus sueños una realidad' />
+    <Information title='Trabaja con nosotros' />
   </>
 );
 

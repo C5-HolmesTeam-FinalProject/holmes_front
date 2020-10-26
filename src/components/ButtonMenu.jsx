@@ -3,22 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 
-const currencies = [
+const countries = [
   {
-    value: 'USD',
-    label: '$',
+    value: 'MX',
+    label: 'México',
   },
   {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
+    value: 'COL',
+    label: 'Colombia',
   },
 ];
 
@@ -33,25 +25,25 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonMenu() {
   const classes = useStyles();
-  const [currency, setCurrency] = React.useState('EUR');
+  const [country, setCountry] = React.useState('MX');
 
   const handleChange = (event) => {
-    setCurrency(event.target.value);
+    setCountry(event.target.value);
   };
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div>
         <TextField
-          id="outlined-select-currency"
+          id="outlined-select-country"
           select
-          label="Select"
-          value={currency}
+          label="País"
+          value={country}
           onChange={handleChange}
-          helperText="Please select your currency"
+          helperText="Selecciona tu País"
           variant="outlined"
         >
-          {currencies.map((option) => (
+          {countries.map((option) => (
             <MenuItem key={option.value} value={option.value}>
               {option.label}
             </MenuItem>

@@ -1,6 +1,5 @@
 import React from 'react';
-import '../assets/styles/Cover.scss';
-
+import '../assets/styles/components/Cover.scss';
 import Header from './Header';
 
 const Cover = () => (

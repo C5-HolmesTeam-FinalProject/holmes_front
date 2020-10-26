@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/card.scss';
+import '../assets/styles/components/Card.scss';
 
 const CardIcon = (Icon) => (
   <>

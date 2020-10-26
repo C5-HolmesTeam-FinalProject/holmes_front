@@ -1,14 +1,14 @@
-import React, { children } from 'react'
+import React, { children } from 'react';
 
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ children }) => (
   <div className='App'>
-    <Header />
+    <Header mode='dark' />
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
-)
+);
 
-export default Layout
+export default Layout;

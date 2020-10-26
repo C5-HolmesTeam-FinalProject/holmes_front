@@ -1,10 +1,12 @@
 import React from 'react';
-import '../assets/styles/card.scss';
+
 import card from '../assets/images/hotel1.jpg';
-import heart from '../assets/images/corazon.png';
-import bed from '../assets/images/cama.png';
-import bathroom from '../assets/images/bañera.png';
-import area from '../assets/images/metros.png';
+import heart from '../assets/images/heart.png';
+import bed from '../assets/images/bed.png';
+import bathroom from '../assets/images/bath.png';
+import area from '../assets/images/meters.png';
+
+import '../assets/styles/components/Card.scss';
 
 const Card = ({ title }) => {
   return (

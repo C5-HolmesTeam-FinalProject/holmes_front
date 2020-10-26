@@ -1,7 +1,7 @@
 import React from 'react';
 import Filter from './Filter';
 import Button from './Button';
-import '../assets/styles/Search.scss';
+import '../assets/styles/components/Search.scss';
 
 const Search = () => (
   <section className='Search'>
