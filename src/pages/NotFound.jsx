@@ -26,7 +26,7 @@ const NotFound = () => (
           <span>Ups!&nbsp;No pudimos&nbsp;encontrar la casa que buscabas</span>
           <span>
             <Link to='/'>
-              <b>Regresa&nbsp;a nuestro Home</b>
+              <b>Regresa&nbsp;a nuestro Holmes</b>
             </Link>
           </span>
         </div>
