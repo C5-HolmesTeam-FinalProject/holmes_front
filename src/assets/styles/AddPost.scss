@@ -24,7 +24,7 @@ h1 {
     
 }
 .descriptionText{
-    margin: 0 10px 10px;
+    margin: 0 10px 30px;
     padding: 15px;
     background-color: $color4;
     height: 400px;
@@ -42,4 +42,20 @@ h1 {
             border-radius: 20px;
         }
     }
+}
+
+.gallery {
+    margin: 50px 10px 10px 30px;
+    padding: 15px;
+    background-color: $color4;
+    height: 300px;
+    width: calc(100% - 50px);
+    border-radius: 20px;
+    img {
+        height: 200px;
+    }
+}
+.galleryButtons {
+    display: flex;
+    justify-content: space-between;
 }

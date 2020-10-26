@@ -2,8 +2,10 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import ButtonMenu from '../components/ButtonMenu';
+import Button from '../components/Button';
 
-import '../assets/styles/AddPost.scss'
+import '../assets/styles/AddPost.scss';
+import image from '../assets/images/photo1.jpeg';
 
 const AddPost = () => (
   <>
@@ -41,6 +43,15 @@ const AddPost = () => (
           <input type="text" id="description" name="description" />
         </form>
       </section>
+      <Button text='Guardar Cambios' onClick={() => console.log('a trabajar')} />
+      <section className="gallery">
+        <h2>Galería</h2>
+        <img src={image} alt=""/>
+      </section>
+      <div className="galleryButtons">
+        <Button text='Agregar Imágen' onClick={() => console.log('a trabajar')} />
+        <Button text='Borrar Imágen' onClick={() => console.log('a trabajar')} />
+      </div>
     </Layout>
   </>
 );
