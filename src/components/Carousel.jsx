@@ -25,6 +25,14 @@ class CarouselLanding extends Component {
           <img src={home3} />
           <p className='legend'>Legend 3</p>
         </div>
+        <div>
+          <img src={home4} />
+          <p className='legend'>Legend 3</p>
+        </div>
+        <div>
+          <img src={home5} />
+          <p className='legend'>Legend 3</p>
+        </div>
       </Carousel>
     );
   }
