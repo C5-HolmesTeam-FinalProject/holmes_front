@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../assets/styles/card.scss';
-
 import photo from '../assets/images/hotel1.jpg';
 import heart from '../assets/images/heart.png';
 import bed from '../assets/images/bed.png';
