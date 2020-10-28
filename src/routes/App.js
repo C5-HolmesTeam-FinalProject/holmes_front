@@ -6,11 +6,9 @@ import AddPost from '../pages/AddPost';
 import NotFound from '../pages/NotFound';
 import Profile from '../pages/Profile';
 import Landing from '../pages/Landing';
+import Developers from '../pages/Developers';
 
 import '../assets/styles/GlobalStyles.scss';
-// import Register from '../containers/Register';
-// import Layout from '../components/Layout';
-// import Player from '../containers/Player'
 
 const App = () => (
   <BrowserRouter>
@@ -19,6 +17,7 @@ const App = () => (
       <Route exact path='/addpost' component={AddPost} />
       <Route exact path='/profile' component={Profile} />
       <Route exact path='/landing' component={Landing} />
+      <Route exact path='/developers' component={Developers} />
       <Route component={NotFound} />
     </Switch>
 
