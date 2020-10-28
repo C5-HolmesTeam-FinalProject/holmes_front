@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import '../assets/styles/profile.scss';
 import React from 'react';
-import usuario from '../assets/images/Usuario.png'
+import usuario from '../assets/images/Usuario.png';
 
 const Profile = () => {
   return (
