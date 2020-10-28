@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import SimilarListings from '../components/SimilarListings';
 import Button from '../components/Button'
 
-import '../assets/styles/profile.scss';
+import '../assets/styles/Profile.scss';
 
 import photoUser from '../assets/images/Usuario.png';
 import { Container } from '@material-ui/core';
@@ -13,9 +13,9 @@ const Profile = () => {
   return (
     <>
       <Layout>
-        <div className='Mi__perfil'>
-          <h1>Mi Perfil</h1>
-        </div>
+      <section className="userData">
+        <h1>Mi Perfil</h1>
+      </section>
         <div className='Grid'>
           <div className='Grid__Formulario'>
             <form className='Grid__Formulario--form' action='' method='post'>
@@ -43,6 +43,7 @@ const Profile = () => {
               </ul>
             </form>
           </div>
+        
           <div className='Grid__Imagen'>
             <img className='Grid__Imagen--usuario' src={photoUser} alt='' />
             <div>

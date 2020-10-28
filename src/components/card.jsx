@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import photo from '../assets/images/hotel1.jpg';
 import heart from '../assets/images/heart.png';
@@ -11,7 +12,9 @@ import '../assets/styles/components/Card.scss';
 const Card = ({ title }) => {
   return (
     <section className='card'>
-      <img src={photo} className='card__image' alt='Imagen de la Card' />
+      <Link to='/detailsproperty'>
+        <img src={photo} className='card__image' alt='Imagen de la Card' />
+      </Link>
       <div className='card__body'>
         <h2 className='card__body--title'>{title}</h2>
         <img src={heart} className='card__body--heart' alt='Heart icon' />

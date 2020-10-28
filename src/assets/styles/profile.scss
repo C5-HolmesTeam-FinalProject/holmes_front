@@ -2,34 +2,19 @@ body {
   background-color: #e5e5e5;
 }
 
-.Mi__perfil {
-  margin: 40px 40px 40px 40px;
-}
-.Mis__Favoritos {
-  margin: 40px 40px 40px 40px;
-}
-
-.Mis__Publicaciones {
-  margin: 40px 40px 40px 40px;
-}
-
-.Grid__Publicaciones {
-  margin: 40px 40px 40px 40px;
-}
-
-.Grid__MisFavoritos {
-  margin: 40px 40px 40px 40px;
+.userData{
+  margin: 40px;
 }
 .Grid {
-  margin: 40px 40px 40px 40px;
+  margin: 40px;
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 550px 400px;
   grid-template-rows: 300px;
   grid-gap: 10px;
   /*grid-auto-rows: minmax(100px, auto);*/
   /*grid-row-gap: 5px;*/
-  grid-column-gap: 400px;
+  grid-column-gap: 100px;
 }
 
 .Grid__Formulario {
@@ -41,18 +26,19 @@ body {
 }
 
 .Grid__Formulario--form {
-  margin: 0 auto;
-  width: 400px;
-  padding: 2em;
+  margin: 15px;
+  width: 500px;
+  padding: 1em;
   border-radius: 1em;
 }
 
 label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
-  width: 90px;
+  width: 170px;
   text-align: right;
   font-weight: 600;
+  padding-right: 20px;
 }
 
 ul {
@@ -83,6 +69,7 @@ ul {
   width: 150px;
   margin-left: 125px;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .Gridd__Imagen--btnImagen {
@@ -104,24 +91,12 @@ ul {
   background-color: #fff;
   box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
   border-radius: 25px 25px;
-  margin-bottom: 40px;
+  padding: 8px;
   width: 400px;
-  margin-left: 5px;
   height: 52px;
 }
 
-.Gridd__Imagen--btncontraseña {
-  margin-left: 150px;
-  margin-top: 6px;
-  background-color: #941b0c;
-  border: 0;
-  height: 40px;
-  width: 120px;
-  font-size: 10px;
-  color: black;
-  border-top-right-radius: 25px;
-  outline: none;
-}
+
 
 .Grid__Cambios {
   display: grid;
@@ -136,7 +111,7 @@ ul {
   border-radius: 25px 25px;
   margin-bottom: 50px;
   width: 200px; */
-  margin-left: 200px;
+  margin: 20px 0 100px 0;
   /* height: 40px; */
 }
 .Gridd__Cambios--btncambios {
