@@ -9,23 +9,24 @@ import '../assets/styles/Footer.scss';
 const Footer = ({ title }) => (
   <div className='Footer'>
     <section className='Footer__FirstPart'>
-      <h3 className='Footer__FirstPart--title'>{title}</h3>
+      <h3 className='Footer__title'>{title}</h3>
       <Button text='Trabaja con nosotros' />
     </section>
     <hr className='Footer__line' />
     <div className='Footer__secondpart'>
       <section className=''>
-        <img className='Footer__secondpart--brand' src={logo} alt='logo' />
+        <img className='Footer__brand' src={logo} alt='logo' />
         <br />
-        <a href='/'><img className='Footer__secondpart--icon' src={facebook} alt='facebook' /></a>
-        <a href='/'><img className='Footer__secondpart--icon' src={instagram} alt='instagram' /></a>
-        <a href='/' alt='twitter'><img className='Footer__secondpart--icon' src={twitter} alt='twitter' /></a>
+        <a href='/'><img className='Footer__SocialIcons--facebook' src={facebook} alt='facebook' /></a>
+        <a href='/'><img className='Footer__SocialIcons' src={instagram} alt='instagram' /></a>
+        <a href='/' alt='twitter'><img className='Footer__SocialIcons' src={twitter} alt='twitter' /></a>
       </section>
-      <section className='Footer__secondpart--column'>
+
+      <section className='Footer__column'>
         <h5>¿Quiénes somos?</h5>
         <p>Un portal web dedicado al mercado de bienes Raices. Holmes te ofrece inmuebles en Venta y Renta en Colombia y México. </p>
       </section>
-      <section className='Footer__secondpart--column'>
+      <section className='Footer__column'>
         <h5>Anuncios</h5>
         <ul>
           <li><a href='/'>En Venta</a></li>
@@ -33,7 +34,7 @@ const Footer = ({ title }) => (
           <li><a href='/'>Tipo de Inmueble</a></li>
         </ul>
       </section>
-      <section className='Footer__secondpart--column'>
+      <section className='Footer__column'>
         <h5>Servicio al Cliente</h5>
         <ul>
           <li>Contáctenos</li>
