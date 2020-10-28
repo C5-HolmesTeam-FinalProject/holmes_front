@@ -1,40 +1,46 @@
 //- colors
-$color1: #161414;
-$color2: #f8aa1d;
-$color3: #621708;
-$color4: #f9f7f7;
-$color5: #941b0c;
-$color6: #bc3908;
+$color1:#161414;
+$color2:#F8AA1D;
+$color3:#621708;
+$color4:#F9F7F7;
+$color5:#941b0C;
+$color6:#BC3908;
+$color7:#C5C0C0;
 
 //--fonts size
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-$font-family: "Montserrat", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$font-family: 'Montserrat', sans-serif;
+$size-xxs:15px;
 $size-xs: 20px;
 $size-s: 25px;
 $size-m: 36px;
 $size-l: 50px;
 $size-xl: 68px;
 $size-xxl: 150px;
+$size-title:40px;
 $size-icons: 45px;
 
 //--font-weight
-$font-weight-m: 600;
-$font-weight-l: 700;
-$font-weight-xl: 800;
-$font-weight-xxl: 900;
+$font-weight-m:600;
+$font-weight-l:700;
+$font-weight-xl:800;
+$font-weight-xxl:900;
 
 //-padding
 $padding1: 1rem 0;
 $padding2: 1rem 1rem;
 $padding3: 0 1rem;
-$padding4: 2rem 1rem;
+$padding4: 2rem 1rem; 
 $padding5: 3rem 1rem;
-$padding6: 1rem;
+$padding6:1rem;
+$padding7:2rem;
+
 
 //-percent
-$percent1: 10%;
-$percent2: 20%;
-$percent3: 30%;
-$percent4: 40%;
-$percent5: 50%;
-$percent6: 60%;
+$percent1:10%;
+$percent2:20%;
+$percent3:30%;
+$percent4:40%;
+$percent5:50%;
+$percent6:60%;
+
