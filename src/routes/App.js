@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from '../pages/Home';
+import DetailsProperty from '../pages/DetailsProperty';
 import AddPost from '../pages/AddPost';
 import NotFound from '../pages/NotFound';
 
@@ -15,6 +16,7 @@ const App = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact path='/detailsproperty' component={DetailsProperty} />
       <Route exact path='/addpost' component={AddPost} />
       {/* <Route exact path="/login" component = {Login} />
             <Route exact path="/register" component = {Register} />

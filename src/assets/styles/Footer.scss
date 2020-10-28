@@ -12,7 +12,7 @@
   padding: 4rem 2rem;
 }
 
-.Footer__FirstPart--title{
+.Footer__title{
   font-size: 1.2em;
   color:$color4;
 }
@@ -33,24 +33,28 @@
     color:$color4;
   }
 }
-.Footer__secondpart--brand{
+.Footer__brand{
   width: 110px;
   padding: $padding6;
 
 }
 
-.Footer__secondpart--icon{
+.Footer__SocialIcons{
   width: 1em;
   padding: $padding6;
-  height:1.2em;
 }
 
-.Footer__secondpart--column{
+.Footer__SocialIcons--facebook{
+  width: 10px;
+  padding: $padding6;
+}
+
+.Footer__column{
   display: flex;
   padding: $padding6;
   flex-direction: column;
 }
 
-.Footer__secondpart--column ul{
+.Footer__column ul{
   padding: $padding6;
 }

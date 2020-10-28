@@ -1,0 +1,17 @@
+@import '../Vars.scss';
+.SingleDetail{
+  display: flex;
+  justify-content: center;
+  background-color: $color4;
+}
+
+.SingleDetail--img{
+  width: 25%;
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+.SingleDetail--title{
+  font-size: $size-s;
+  font-weight: $font-weight-l;
+}
