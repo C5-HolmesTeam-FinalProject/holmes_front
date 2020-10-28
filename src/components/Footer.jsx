@@ -10,7 +10,7 @@ const Footer = ({ title }) => (
   <div className='Footer'>
     <section className='Footer__FirstPart'>
       <h3 className='Footer__title'>{title}</h3>
-      <Button text='Trabaja con nosotros' />
+      <Button text='Trabaja con nosotros' to='/developers' />
     </section>
     <hr className='Footer__line' />
     <div className='Footer__secondpart'>
