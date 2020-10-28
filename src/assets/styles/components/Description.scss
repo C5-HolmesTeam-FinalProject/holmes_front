@@ -1,0 +1,18 @@
+@import '../Vars.scss';
+.Description{
+  margin:2em;
+  border-radius: 20px;
+  background-color: $color4;
+}
+
+.Description__Title{
+ padding:$padding8;
+}
+
+.Description__Line{
+  width: 90%;
+}
+
+.Description__Paragraph{
+  padding: 0 $padding8 $padding8 $padding9;
+}
