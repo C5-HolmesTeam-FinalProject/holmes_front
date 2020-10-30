@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Arrow from '../assets/images/yellowArrow.png';
 import '../assets/styles/components/Button.scss';
 
 const Button = ({ mode, text, onClick, to }) => {
@@ -11,7 +10,7 @@ const Button = ({ mode, text, onClick, to }) => {
       onClick={onClick}
     >
       {text}
-      <img src={Arrow} alt='Arrow' />
+
     </Link>
   );
 };

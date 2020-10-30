@@ -13,9 +13,9 @@ const Profile = () => {
   return (
     <>
       <Layout>
-      <section className="userData">
-        <h1>Mi Perfil</h1>
-      </section>
+        <section className="userData">
+          <h1>Mi Perfil</h1>
+        </section>
         <div className='Grid'>
           <div className='Grid__Formulario'>
             <form className='Grid__Formulario--form' action='' method='post'>
@@ -43,10 +43,10 @@ const Profile = () => {
               </ul>
             </form>
           </div>
-        
+
           <div className='Grid__Imagen'>
             <img className='Grid__Imagen--usuario' src={photoUser} alt='' />
-            <div>
+            <div className="Grid__Imagen--btnCambiar">
               <Button text='Cambiar Imágen' />
             </div>
           </div>
@@ -65,7 +65,7 @@ const Profile = () => {
         </div>
 
         <div className='Grid__MisFavoritos'>
-            <SimilarListings />
+          <SimilarListings />
         </div>
 
         <div className='Mis__Publicaciones'>
