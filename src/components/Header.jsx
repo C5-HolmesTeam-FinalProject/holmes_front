@@ -2,12 +2,31 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 
+import Swal from 'sweetalert2';
 import logo from '../assets/images/logo_holmes.png';
-import Button from './Button';
+import ActionButton from './ActionButton';
 import Modal from './Modal';
+import HeaderMenu from './HeaderMenu';
 
 const Header = ({ mode }) => {
-  const [modal, setModal] = useState([]);
+  const [modal, setModal] = useState(false);
+  const [form, setForm] = useState({
+    roleid: 1,
+    parentuserid: null,
+    groupid: 1,
+    user: '',
+    email: '',
+    password1: '',
+    password2: '',
+    age: '',
+  });
+
+  const handleInputChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
 
   const nuevo = () => {
     setModal(!modal);
@@ -17,61 +36,68 @@ const Header = ({ mode }) => {
   };
 
   return (
-    <div className={mode === 'dark' ? 'Header Header--dark' : 'Header'}>
-      <Link to='/'><img className='Header__brand' src={logo} alt='logo' /></Link>
-      <div className='Header__nav'>
-        <a className='Header__nav-item' onClick={addUser}>Registrarme</a>
-        <Button text='Mi cuenta' to='/profile' />
+    <>
+      <div className={mode === 'dark' ? 'Header Header--dark' : 'Header'}>
+        <Link to='/'><img className='Header__brand' src={logo} alt='logo' /></Link>
+        <div className='Header__nav'>
+          <a className='Header__nav-item' onClick={addUser}>Registrarme</a>
+          <HeaderMenu />
+        </div>
       </div>
-
-    {/* <Modal visible={modal}>
+      <Modal visible={modal}>
         <div className='modal-content'>
           <span className='close' onClick={nuevo}>
             &times;
           </span>
-          <h2>New User</h2>
-          <span className='label'>Name</span>
+          <div className='logo'><img src={logo} alt=""/></div>
+          <span className='label'>Usuario</span>
           <input
             className='input'
             type='text'
-            value={form.name}
+            value={form.user}
             onChange={handleInputChange}
-            name='name'
-          />
-          <br />
-          <span className='label'>Lastname</span>
-          <input
-            className='input'
-            type='text'
-            value={form.lastname}
-            onChange={handleInputChange}
-            name='lastname'
+            name='user'
+            placeholder='Elige un nombre de usuario....'
           />
           <br />
           <span className='label'>Email</span>
           <input
             className='input'
-            type='text'
+            type='email'
             value={form.email}
             onChange={handleInputChange}
             name='email'
+            placeholder='Escribe tu email....'
           />
           <br />
-          <span className='label'>Phone</span>
+          <span className='label'>Contraseña</span>
           <input
             className='input'
-            type='text'
-            value={form.phone}
+            type='password'
+            value={form.password1}
             onChange={handleInputChange}
-            name='phone'
+            name='password1'
+            placeholder='Elige una contraseña....'
           />
-          <button className='btn' onClick={saveUser}>
-            Save
-          </button>
           <br />
+          <span className='label'>Confirmar Contraseña</span>
+          <input
+            className='input'
+            type='password'
+            value={form.password2}
+            onChange={handleInputChange}
+            name='password2'
+            placeholder='Repite tu contraseña....'
+          />
+          <div className='buttonAction'><ActionButton text='Aceptar' onClick='/' /></div>
+          <br />
+          <div className="terms">
+            <Link className='advisors'>Aviso de<br/> Privacidad</Link>
+            <Link className='advisors'>Terminos y<br/> Condiciones</Link>
+          </div>
         </div>
-      </Modal> */}
-    </div>
+      </Modal>
+    </>
   );
 };
 export default Header;

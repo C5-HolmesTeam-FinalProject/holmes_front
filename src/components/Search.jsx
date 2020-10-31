@@ -1,6 +1,6 @@
 import React from 'react';
 import Filter from './Filter';
-import Button from './Button';
+import ActionButton from './ActionButton';
 import '../assets/styles/components/Search.scss';
 
 const Search = () => (
@@ -17,7 +17,7 @@ const Search = () => (
       <Filter text='Ciudad' />
       <Filter text='Barrio o Colonia' />
     </div>
-    <Button text='Buscar' />
+    <ActionButton text='Buscar' />
   </section>
 
 );

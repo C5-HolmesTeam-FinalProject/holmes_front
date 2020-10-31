@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import ButtonMenu from '../components/ButtonMenu';
-import Button from '../components/Button';
+import ActionButton from '../components/ActionButton';
 
 import '../assets/styles/AddPost.scss';
 import image from '../assets/images/photo1.jpeg';
@@ -43,7 +43,7 @@ const AddPost = () => (
           <input type="text" id="description" name="description" />
         </form>
       </section>
-      <Button text='Guardar Cambios' onClick={() => console.log('a trabajar')} />
+      <ActionButton text='Guardar Cambios' onClick={() => console.log('a trabajar')} />
       <section className="gallery">
         <h2>Galería</h2>
         <div className="galleryImages">
@@ -53,8 +53,8 @@ const AddPost = () => (
         </div>
       </section>
       <div className="galleryButtons">
-        <Button text='Agregar Imágen' onClick={() => console.log('a trabajar')} />
-        <Button text='Borrar Imágen' onClick={() => console.log('a trabajar')} />
+        <ActionButton text='Agregar Imágen' onClick={() => console.log('a trabajar')} />
+        <ActionButton text='Borrar Imágen' onClick={() => console.log('a trabajar')} />
       </div>
     </Layout>
   </>

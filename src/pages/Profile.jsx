@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SimilarListings from '../components/SimilarListings';
-import Button from '../components/Button'
+import ActionButton from '../components/ActionButton'
 
 import '../assets/styles/Profile.scss';
 
@@ -47,16 +47,16 @@ const Profile = () => {
           <div className='Grid__Imagen'>
             <img className='Grid__Imagen--usuario' src={photoUser} alt='' />
             <div className="Grid__Imagen--btnCambiar">
-              <Button text='Cambiar Imágen' />
+              <ActionButton text='Cambiar Imágen' />
             </div>
           </div>
           <div className='Grid__Cambios'>
             <div className='Grid__BotonCambios'>
-              <Button text='Guardar cambios' />
+              <ActionButton text='Guardar cambios' />
             </div>
           </div>
           <div className='Grid__imagen--contraseña'>
-            <Button text='Cambiar Contraseña' mode='darkred' />
+            <ActionButton text='Cambiar Contraseña' mode='darkred' />
           </div>
         </div>
 
