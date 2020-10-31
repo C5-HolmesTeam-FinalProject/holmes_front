@@ -2,6 +2,10 @@ import React from 'react';
 
 import Modal from '../components/Modal';
 
+import Swal from 'sweetalert2';
+import logo from '../assets/images/logo_holmes.png';
+
+
 const Login = () => {
 
   return (
