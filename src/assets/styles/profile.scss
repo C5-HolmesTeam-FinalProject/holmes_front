@@ -2,11 +2,12 @@ body {
   background-color: #e5e5e5;
 }
 
-.userData{
+.userData {
   margin: 40px;
+  font-size: 1.5em;
 }
 .Grid {
-  margin: 40px;
+  margin: 40px 0px 40px 180px;
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: 550px 400px;
@@ -63,7 +64,6 @@ ul {
   background-color: #fff;
   box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
   border-radius: 25px 25px;
-  margin-bottom: 20px;
 }
 .Grid__Imagen--usuario {
   width: 150px;
@@ -71,7 +71,9 @@ ul {
   margin-top: 15px;
   margin-bottom: 50px;
 }
-
+.Grid__Imagen--btnCambiar {
+  margin: 0% 0% 0% 30%;
+}
 .Gridd__Imagen--btnImagen {
   margin-left: 150px;
   margin-top: 25px;
@@ -86,17 +88,16 @@ ul {
 }
 
 .Grid__imagen--contraseña {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
-  border-radius: 25px 25px;
-  padding: 8px;
-  width: 400px;
-  height: 52px;
+  margin-top: 19px;
+  // cursor: pointer;
+  // transition: all 0.3s ease;
+  // background-color: #fff;
+  // box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+  // border-radius: 25px 25px;
+  // padding: 8px;
+  // width: 400px;
+  // height: 52px;
 }
-
-
 
 .Grid__Cambios {
   display: grid;

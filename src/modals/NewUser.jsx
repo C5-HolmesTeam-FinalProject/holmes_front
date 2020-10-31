@@ -1,14 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/Header.scss';
 
 import Swal from 'sweetalert2';
 import logo from '../assets/images/logo_holmes.png';
-import ActionButton from './ActionButton';
-import Modal from './Modal';
-import HeaderMenu from './HeaderMenu';
+import ActionButton from '../components/ActionButton';
+import Modal from '../components/Modal';
 
-const Header = ({ mode }) => {
+
+const NewUser = ({ mode }) => {
   const [modal, setModal] = useState(false);
   const [form, setForm] = useState({
     roleid: 1,
@@ -37,13 +36,6 @@ const Header = ({ mode }) => {
 
   return (
     <>
-      <div className={mode === 'dark' ? 'Header Header--dark' : 'Header'}>
-        <Link to='/'><img className='Header__brand' src={logo} alt='logo' /></Link>
-        <div className='Header__nav'>
-          <a className='Header__nav-item' onClick={addUser}>Registrarme</a>
-          <HeaderMenu />
-        </div>
-      </div>
       <Modal visible={modal}>
         <div className='modal-content'>
           <span className='close' onClick={nuevo}>
@@ -100,6 +92,4 @@ const Header = ({ mode }) => {
     </>
   );
 };
-export default Header;
-
-{ /* <Header mode='dark' /> */ }
+export default NewUser;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SimilarListings from '../components/SimilarListings';
-import Button from '../components/Button'
+import ActionButton from '../components/ActionButton'
 
 import '../assets/styles/Profile.scss';
 
@@ -13,9 +13,9 @@ const Profile = () => {
   return (
     <>
       <Layout>
-      <section className="userData">
-        <h1>Mi Perfil</h1>
-      </section>
+        <section className="userData">
+          <h1>Mi Perfil</h1>
+        </section>
         <div className='Grid'>
           <div className='Grid__Formulario'>
             <form className='Grid__Formulario--form' action='' method='post'>
@@ -43,20 +43,20 @@ const Profile = () => {
               </ul>
             </form>
           </div>
-        
+
           <div className='Grid__Imagen'>
             <img className='Grid__Imagen--usuario' src={photoUser} alt='' />
-            <div>
-              <Button text='Cambiar Imágen' />
+            <div className="Grid__Imagen--btnCambiar">
+              <ActionButton text='Cambiar Imágen' />
             </div>
           </div>
           <div className='Grid__Cambios'>
             <div className='Grid__BotonCambios'>
-              <Button text='Guardar cambios' />
+              <ActionButton text='Guardar cambios' />
             </div>
           </div>
           <div className='Grid__imagen--contraseña'>
-            <Button text='Cambiar Contraseña' mode='darkred' />
+            <ActionButton text='Cambiar Contraseña' mode='darkred' />
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const Profile = () => {
         </div>
 
         <div className='Grid__MisFavoritos'>
-            <SimilarListings />
+          <SimilarListings />
         </div>
 
         <div className='Mis__Publicaciones'>
