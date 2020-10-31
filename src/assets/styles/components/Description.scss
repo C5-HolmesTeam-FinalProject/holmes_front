@@ -1,18 +1,21 @@
-@import '../Vars.scss';
-.Description{
-  margin:2em;
+@import "../Vars.scss";
+.Description {
+  display: flex;
+}
+.Description_block {
+  margin: 5px 30px 5px 30px;
   border-radius: 20px;
   background-color: $color4;
 }
 
-.Description__Title{
- padding:$padding8;
+.Description__Title {
+  padding: $padding8;
 }
 
-.Description__Line{
+.Description__Line {
   width: 90%;
 }
 
-.Description__Paragraph{
+.Description__Paragraph {
   padding: 0 $padding8 $padding8 $padding9;
 }
