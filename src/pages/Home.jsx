@@ -4,9 +4,11 @@ import Information from '../components/Information';
 import Search from '../components/Search';
 import Footer from '../components/Footer';
 import SimilarListings from '../components/SimilarListings';
+import Datos from '../hooks/UseState';
 
 const Home = () => (
   <>
+    <Datos />
     <Cover />
     <Search />
     <SimilarListings />

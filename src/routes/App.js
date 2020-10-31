@@ -12,6 +12,7 @@ import Developers from '../pages/Developers';
 import '../assets/styles/GlobalStyles.scss';
 
 const App = () => (
+
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={Home} />
