@@ -1,31 +1,33 @@
 @import "../Vars.scss";
-body{
-  margin:0;
+body {
+  margin: 0;
 }
-.Header{
+.Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: $padding2;
 }
 
-.Header--dark{
-  background-color:$color1;
+.Header--dark {
+  background-color: $color1;
 }
 
-.Header__brand{
+.Header__brand {
   width: 150px;
 }
+.Header__nav {
+  display: flex;
+}
+.Header__nav a {
+  margin-left: 2rem;
+}
 
- .Header__nav a{
-    margin-left: 2rem;
- }
-
-.Header__nav--item{
+.Header__nav--item {
   padding: $padding3;
 }
 
-.Header__nav a{
+.Header__nav a {
   font-family: $font-family;
   text-decoration: none;
   color: $color4;
@@ -33,6 +35,6 @@ body{
   font-weight: $font-weight-m;
   cursor: pointer;
 }
-.Header__nav a:hover{
+.Header__nav a:hover {
   font-size: $size-s;
 }
