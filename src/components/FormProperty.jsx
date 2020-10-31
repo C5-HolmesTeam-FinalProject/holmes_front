@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageProfile from '../assets/images/ProfileForm.jpg';
-import "../assets/styles/components/FormProperty.scss"
-import Button from '../components/Button';
+import '../assets/styles/components/FormProperty.scss';
+import Button from '../components/ActionButton';
 
 const FormProperty = () => {
     return (
