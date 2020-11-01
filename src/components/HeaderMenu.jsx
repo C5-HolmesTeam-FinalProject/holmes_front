@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Button from '@material-ui/core/Button';
 import Swal from 'sweetalert2';
 
 import logo from '../assets/images/logo_holmes.png';
@@ -25,7 +24,6 @@ const HeaderMenu = ({ mode }) => {
   const [modal, setModal] = useState(false);
   const [form, setForm] = useState({
     roleid: 1,
-    parentuserid: null,
     groupid: 1,
     email: '',
     password: '',
@@ -87,9 +85,13 @@ const HeaderMenu = ({ mode }) => {
             placeholder='Escribe tu contraseña....'
           />
           <br />
-
           <div className='buttonAction'><ActionButton text='Aceptar' onClick='/' /></div>
           <br />
+          <div className="forgot"><Link to='/' className='advisors' onClick={login}>Olvidé mi contraseña</Link></div>
+          <div className="terms">
+            <Link to='/' className='advisors'>Aviso de<br/> Privacidad</Link>
+            <Link to='/' className='advisors'>Terminos y<br/> Condiciones</Link>
+          </div>
         </div>
       </Modal>
     </>

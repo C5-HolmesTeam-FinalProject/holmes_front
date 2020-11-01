@@ -19,25 +19,25 @@ const Profile = () => {
         <div className='Grid'>
           <div className='Grid__Formulario'>
             <form className='Grid__Formulario--form' action='' method='post'>
-              <ul>
+              <ul className='ul'>
                 <li>
-                  <label htmlFor='name'>Nombre de Usuario:</label>
+                  <label className='label' htmlFor='name'>Nombre de Usuario:</label>
                   <input type='text' id='name' name='nombreUsuario' />
                 </li>
                 <li>
-                  <label htmlFor='mail'>Nombre(s):</label>
+                  <label className='label' htmlFor='mail'>Nombre(s):</label>
                   <input type='email' id='mail' name='nombres' />
                 </li>
                 <li>
-                  <label htmlFor='mail'>Apellidos:</label>
+                  <label className='label' htmlFor='mail'>Apellidos:</label>
                   <input type='email' id='mail' name='apellidos' />
                 </li>
                 <li>
-                  <label htmlFor='mail'>Email:</label>
+                  <label className='label' htmlFor='mail'>Email:</label>
                   <input type='email' id='mail' name='email' />
                 </li>
                 <li>
-                  <label htmlFor='mail'>Telefono:</label>
+                  <label className='label' htmlFor='mail'>Telefono:</label>
                   <input type='email' id='mail' name='telefono' />
                 </li>
               </ul>

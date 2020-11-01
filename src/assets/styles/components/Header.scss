@@ -17,17 +17,15 @@ body {
   width: 150px;
 }
 .Header__nav {
+  width: 30%;
   display: flex;
+  justify-content: space-between;
 }
-.Header__nav a {
-  margin-left: 2rem;
-}
-
 .Header__nav--item {
   padding: $padding3;
 }
 
-.Header__nav a {
+.Header__nav-item {
   font-family: $font-family;
   text-decoration: none;
   color: $color4;

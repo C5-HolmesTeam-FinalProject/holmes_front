@@ -33,7 +33,7 @@ body {
   border-radius: 1em;
 }
 
-label {
+.label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
   width: 170px;
@@ -42,7 +42,7 @@ label {
   padding-right: 20px;
 }
 
-ul {
+.ul {
   list-style: none;
   padding: 0;
   margin: 0;

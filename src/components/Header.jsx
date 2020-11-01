@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 
 import Swal from 'sweetalert2';
+
 import logo from '../assets/images/logo_holmes.png';
+
 import ActionButton from './ActionButton';
 import Modal from './Modal';
 import HeaderMenu from './HeaderMenu';
@@ -12,7 +14,6 @@ const Header = ({ mode }) => {
   const [modal, setModal] = useState(false);
   const [form, setForm] = useState({
     roleid: 1,
-    parentuserid: null,
     groupid: 1,
     user: '',
     email: '',
@@ -92,8 +93,8 @@ const Header = ({ mode }) => {
           <div className='buttonAction'><ActionButton text='Aceptar' onClick='/' /></div>
           <br />
           <div className="terms">
-            <Link className='advisors'>Aviso de<br/> Privacidad</Link>
-            <Link className='advisors'>Terminos y<br/> Condiciones</Link>
+            <Link to='/' className='advisors'>Aviso de<br/> Privacidad</Link>
+            <Link to='/' className='advisors'>Terminos y<br/> Condiciones</Link>
           </div>
         </div>
       </Modal>
