@@ -19,8 +19,10 @@ body {
 .Header__nav {
   width: 30%;
   display: flex;
+  width: 35%;
   justify-content: space-between;
 }
+
 .Header__nav--item {
   padding: $padding3;
 }
@@ -32,7 +34,8 @@ body {
   font-size: $size-xs;
   font-weight: $font-weight-m;
   cursor: pointer;
+  margin-left: 2rem;
 }
-.Header__nav a:hover {
+.Header__nav-item:hover {
   font-size: $size-s;
 }

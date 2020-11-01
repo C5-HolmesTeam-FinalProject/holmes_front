@@ -87,10 +87,11 @@ const HeaderMenu = ({ mode }) => {
           <br />
           <div className='buttonAction'><ActionButton text='Aceptar' onClick='/' /></div>
           <br />
-          <div className="forgot"><Link to='/' className='advisors' onClick={login}>Olvidé mi contraseña</Link></div>
+          <div className="recover"><Link className='advisors'>Recuperar Contraseña</Link></div>
+          <br />
           <div className="terms">
-            <Link to='/' className='advisors'>Aviso de<br/> Privacidad</Link>
-            <Link to='/' className='advisors'>Terminos y<br/> Condiciones</Link>
+            <Link className='advisors'>Aviso de<br/> Privacidad</Link>
+            <Link className='advisors'>Terminos y<br/> Condiciones</Link>
           </div>
         </div>
       </Modal>
