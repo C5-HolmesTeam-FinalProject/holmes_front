@@ -15,7 +15,7 @@ function Datos() {
       console.error(err);
     }
   }
-  return <div>Hi</div>;
+  return <></>;
 }
 
 export default Datos;
