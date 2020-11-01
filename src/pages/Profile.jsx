@@ -16,6 +16,8 @@ const Profile = () => {
         <section className="userData">
           <h1>Mi Perfil</h1>
         </section>
+
+
         <div className='Grid'>
           <div className='Grid__Formulario'>
             <form className='Grid__Formulario--form' action='' method='post'>
@@ -60,16 +62,16 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className='Mis__Favoritos'>
-          <h1>Mis Favoritos</h1>
-        </div>
 
+        <div className='Mis__Publicaciones'>
+          <h1>Mis Publicaciones</h1>
+        </div>
         <div className='Grid__MisFavoritos'>
           <SimilarListings />
         </div>
 
-        <div className='Mis__Publicaciones'>
-          <h1>Mis Publicaciones</h1>
+        <div className='Mis__Favoritos'>
+          <h1>Mis Favoritos</h1>
         </div>
 
         <div className='Grid__Publicaciones'>

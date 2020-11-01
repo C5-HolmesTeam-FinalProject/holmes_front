@@ -1,15 +1,14 @@
 import React from 'react';
 import '../assets/styles/components/Cover.scss';
-import Header from './Header';
 import Animation from 'react-typical';
+import Header from './Header';
 
 const Cover = () => (
   <section className='Cover'>
     <Header />
     <p className='Cover-Title'>
       Encuentra tu
-      
-      <p className="Cover__Title--Animation">
+      <p className='Cover__Title--Animation'>
         <Animation
           loop={Infinity}
           wrapper='b'
@@ -27,7 +26,7 @@ const Cover = () => (
           ]}
         />
       </p>
-     
+
       Ahora!
     </p>
 
