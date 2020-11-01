@@ -87,9 +87,14 @@ const HeaderMenu = ({ mode }) => {
             placeholder='Escribe tu contraseña....'
           />
           <br />
-
           <div className='buttonAction'><ActionButton text='Aceptar' onClick='/' /></div>
           <br />
+          <div className="recover"><Link className='advisors'>Recuperar Contraseña</Link></div>
+          <br />
+          <div className="terms">
+            <Link className='advisors'>Aviso de<br/> Privacidad</Link>
+            <Link className='advisors'>Terminos y<br/> Condiciones</Link>
+          </div>
         </div>
       </Modal>
     </>
