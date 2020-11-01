@@ -7,6 +7,11 @@
 /********************************************
 	COLOURS
 ********************************************/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
   -webkit-transition: all 0.25s ease-in;

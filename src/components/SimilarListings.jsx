@@ -8,6 +8,7 @@ const SimilarListings = () => (
     <Card title='Hotel Luxury' />
     <Card title='Hotel Luxury' />
   </div>
+
 );
 
 export default SimilarListings;
