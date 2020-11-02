@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
   <div className='App'>
     <Header mode='dark' />
     {children}
-    <Footer />
+    <Footer title='Haz tus sueños una realidad' />
   </div>
 );
 
