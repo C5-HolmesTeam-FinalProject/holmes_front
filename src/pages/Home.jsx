@@ -12,6 +12,10 @@ const Home = () => (
     <Cover />
     <Search />
     <SimilarListings />
+    <SimilarListings />
+    <br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Te sugerimos ver</h2>
+    <SimilarListings />
+    <br/><br/>
     <Information title='Trabaja con nosotros' />
     <Footer title='Haz tus sueños una realidad' />
   </>
