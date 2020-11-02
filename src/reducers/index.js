@@ -1,15 +1,25 @@
-const reducer = (state, action) => {
+const initialState = {
+  country: '',
+};
+
+const reducer = (state = initialState, action) => {
   switch (action.type) {
+
+    case 'COLOMBIA':
+      return {
+        country: 'colombia',
+      };
+    case 'MEXICO':
+      return {
+        country: 'mexico',
+      };
     case 'SET_FAVORITE':
       return {
         ...state,
         myList: state.myList.some((items) => items.id === action.payload.id) ?
           [...state.myList] :
           [...state.myList, action.payload],
-        // return {
-        //     ...state,
-        //     myList: [...state.myList, action.payload]
-        // }
+
       };
     case 'DELETE_FAVORITE':
       return {
@@ -31,17 +41,10 @@ const reducer = (state, action) => {
         ...state,
         user: action.payload,
       };
-    case 'GET_VIDEO_SOURCE':
-      return {
-        ...state,
-        playing: state.trends.find((item) => item.id === Number(action.payload)) ||
-                state.originals.find((item) => item.id === Number(action.payload)) ||
-                [],
-      };
 
     default:
       return state;
   }
 };
 
-export default reducer
+export default reducer;

@@ -23,10 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonMenu() {
+export default function ButtonMenu({id, label, description, dataType}) {
   const classes = useStyles();
-  const [country, setCountry] = React.useState('MX');
-
+  const [country, setCountry] = React.useState('');
   const handleChange = (event) => {
     setCountry(event.target.value);
   };
@@ -35,12 +34,12 @@ export default function ButtonMenu() {
     <form className={classes.root} noValidate autoComplete="off">
       <div>
         <TextField
-          id="outlined-select-country"
+          id={id}
           select
-          label="País"
+          label={label}
           value={country}
           onChange={handleChange}
-          helperText="Selecciona tu País"
+          helperText={description}
           variant="outlined"
         >
           {countries.map((option) => (
